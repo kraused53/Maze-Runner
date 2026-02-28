@@ -13,7 +13,6 @@ Thats... it.
 
 Once you find the exit, a new level is generated, and the cycle is repeated. I guess the only real way to win IS to not play.
 
----
 
 ## How it works
 
@@ -25,53 +24,14 @@ Each time a level is generated the board is cleared and a new set of nine rooms 
 Then, each room is connected using a simple tunneling algorithm. Then, the game objects are randomly scattered around the map
 before control of the program is handed back to the engine class and the game begins.
 
----
+## How to run it
 
-## Class Overview
+I only used three libraries to build this project. The biggest being PyGame. This library is a one-stop-shop when it 
+comes to making video games in python. I am only using it for rendering and user input, but it also has functionality 
+for audio playback, sprite rendering, cameras, and controllers. I also used the built-in datetime library to generate 
+timestamps for the logging system, and the built-in random library to generate unique mazes.
 
----
-
-### Logger
-
----
-
-To start things off, I designed a simple terminal logging system that I used to track the game's internal state to make 
-debugging easier. Each log gets a time-stamp, and can be one of three severity levels ( 0 -> 2 ). Each level has a 
-unique color when to make identification quicker. I also included a textual indication for users who do not have a 
-terminal that support colored text. The entire logging system can be enabled / disabled by use of a boolean flag.
-
-<br>
-
-<img src="./screenshots/logger-screenshot.png" width="800"/>
-
-<br>
-
-<br>
-
-### Game Object
-
----
-
-### Player
-
----
-
-### Key
-
----
-
-### Door
-
----
-
-### Room
-
----
-
-### Board
-
----
-
-### Engine
-
----
+ - PyGame version 2.6.1
+ - datetime
+ - random
+ - Python 3.8
